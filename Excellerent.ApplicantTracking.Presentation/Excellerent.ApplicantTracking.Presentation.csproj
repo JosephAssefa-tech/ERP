@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+    <PackageReference Include="FluentValidation" Version="10.3.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.13.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIC.APIModularization\Excellerent.APIModularization.csproj" />
+    <ProjectReference Include="..\Excellerent.ApplicantTracking.Domain\Excellerent.ApplicantTracking.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ApplicantTracking.Infrastructure\Excellerent.ApplicantTracking.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Excellerent.ClientManagement.Domain\Excellerent.ClientManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.EppConfiguration.Domain\Excellerent.EppConfiguration.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ProjectManagement.Domain\Excellerent.ProjectManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ResourceManagement.Domain\Excellerent.ResourceManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.SharedModules\Excellerent.SharedModules.csproj" />
+    <ProjectReference Include="..\Excellerent.Timesheet.Domain\Excellerent.Timesheet.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource\ReportQuerys.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ReportQuerys.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource\ReportQuerys.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportQuerys.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

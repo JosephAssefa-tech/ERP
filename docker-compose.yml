@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - "/etc/nginx:/etc/nginx"
+      - "/etc/letsencrypt:/etc/letsencrypt"
+    ports:
+      - "443:443"
+  eppbe:
+    image: excellerentsolutions/eppbe:release-latest
+    ports:
+      - "3000:80"
+    environment:
+      - "SmtpOption__Server=smtp.office365.com"
+      - "SmtpOption__Port=587"
+      - "SmtpOption__FromAddress=Excellers-EPP@excellerentsolutions.com"
+      - "SmtpOption__UserName=Excellers-EPP@excellerentsolutions.com"
+      - "SmtpOption__Password=Gap926962"

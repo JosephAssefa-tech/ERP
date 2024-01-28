@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  	<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+	  <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+	  <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+	  <PackageReference Include="UAParser" Version="3.1.47" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIC.APIModularization\Excellerent.APIModularization.csproj" />
+    <ProjectReference Include="..\Excellerent.SharedInfrastructure\Excellerent.SharedInfrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.ResourceManagement.Domain\Excellerent.ResourceManagement.Domain.csproj" />
+
+    <ProjectReference Include="..\Excellerent.Usermanagement.Domain\Excellerent.Usermanagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.Usermanagement.Infrastructure\Excellerent.Usermanagement.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Templates\AccountNotification.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\PassordResetNotification.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

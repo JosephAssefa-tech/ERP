@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <Compile Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EntityDeploy Remove="Data\Migrations\**" />
+    <None Remove="Data\**" />
+  </ItemGroup>
+
+	
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Excellerent.ApplicantTracking.Domain\Excellerent.ApplicantTracking.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ClientManagement.Domain\Excellerent.ClientManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.EppConfiguration.Domain\Excellerent.EppConfiguration.Domain.csproj" />
+
+    <ProjectReference Include="..\Excellerent.ProjectManagement.Domain\Excellerent.ProjectManagement.Domain.csproj" />
+
+    <ProjectReference Include="..\Excellerent.ReportManagement.Core\Excellerent.ReportManagement.Core.csproj" />
+
+    <ProjectReference Include="..\Excellerent.ResourceManagement.Domain\Excellerent.ResourceManagement.Domain.csproj" />
+
+    <ProjectReference Include="..\Excellerent.SharedModules\Excellerent.SharedModules.csproj" />
+    <ProjectReference Include="..\Excellerent.Timesheet.Domain\Excellerent.Timesheet.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.Usermanagement.Domain\Excellerent.Usermanagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+    <Folder Include="Data\Migration\" />
+    <Folder Include="Helpers\" />
+	<Folder Include="SharedFiles\EmployeesPhoto\" />
+  </ItemGroup>
+
+</Project>

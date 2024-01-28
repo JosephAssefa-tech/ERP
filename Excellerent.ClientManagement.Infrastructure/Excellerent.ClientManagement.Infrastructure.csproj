@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Excellerent.ClientManagement.Domain\Excellerent.ClientManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.SharedInfrastructure\Excellerent.SharedInfrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

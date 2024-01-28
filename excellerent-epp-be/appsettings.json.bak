@@ -1,0 +1,27 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "JwtOptions": {
+    "Issuer": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+    "Audience": "https://18.218.150.53:4200",
+    "SecretKey": "xecretKeywqejane"
+  },
+  "SmtpOption": {
+    "Server": "smtp.office365.com",
+    "Port": 587,
+    "FromAddress": "Excellers-EPP@excellerentsolutions.com",
+    "UserName": "Excellers-EPP@excellerentsolutions.com",
+    "Password": "Gap926962"
+
+  },
+  "ConnectionStrings": {
+    "epp": "User ID=postgres;Password=fiker;Server=3.138.163.97;Port=6532;Database=epp;Pooling=true;"
+
+  }
+}

@@ -1,0 +1,8 @@
+﻿Restored D:\EPP Project\Repositories\excellerent-epp-be\Excellerent.ClientManagement.Infrastructure\Excellerent.ClientManagement.Infrastructure.csproj (in 85 ms).
+Restored D:\EPP Project\Repositories\excellerent-epp-be\Excellerent.ClientManagement.Domain\Excellerent.ClientManagement.Domain.csproj (in 2 ms).
+Restored D:\EPP Project\Repositories\excellerent-epp-be\Excellerent.ClientManagement.UnitTest\Excellerent.ClientManagement.UnitTest.csproj (in 3 ms).
+Restored D:\EPP Project\Repositories\excellerent-epp-be\Excellerent.ClientManagement.Presentation\Excellerent.ClientManagement.Presentation.csproj (in 395 ms).
+Time Elapsed: 00:00:00.6702550
+========== Finished ==========
+
+

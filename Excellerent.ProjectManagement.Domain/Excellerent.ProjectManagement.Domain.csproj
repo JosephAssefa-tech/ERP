@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LinqKit" Version="1.1.27" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Excellerent.ClientManagement.Domain\Excellerent.ClientManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ResourceManagement.Domain\Excellerent.ResourceManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.SharedModules\Excellerent.SharedModules.csproj" />
+    <ProjectReference Include="..\Excellerent.Usermanagement.Domain\Excellerent.Usermanagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

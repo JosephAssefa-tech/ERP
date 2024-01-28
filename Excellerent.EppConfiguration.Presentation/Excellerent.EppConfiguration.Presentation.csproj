@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIC.APIModularization\Excellerent.APIModularization.csproj" />
+    <ProjectReference Include="..\Excellerent.EppConfiguration.Infrastructure\Excellerent.EppConfiguration.Infrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.UserManagement.Presentation\Excellerent.UserManagement.Presentation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource\Countries.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Countries.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource\Countries.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Countries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

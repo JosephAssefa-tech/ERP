@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIC.APIModularization\Excellerent.APIModularization.csproj" />
+    <ProjectReference Include="..\Excellerent.ClientManagement.Domain\Excellerent.ClientManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ClientManagement.Infrastructure\Excellerent.ClientManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.UserManagement.Presentation\Excellerent.UserManagement.Presentation.csproj" />
+  </ItemGroup>
+
+</Project>

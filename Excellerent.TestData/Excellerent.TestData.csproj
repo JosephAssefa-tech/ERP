@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TimeSheet\**" />
+    <EmbeddedResource Remove="TimeSheet\**" />
+    <EntityDeploy Remove="TimeSheet\**" />
+    <None Remove="TimeSheet\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Excellerent.ApplicantTracking.Domain\Excellerent.ApplicantTracking.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ApplicantTracking.Infrastructure\Excellerent.ApplicantTracking.Infrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.ClientManagement.Domain\Excellerent.ClientManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ClientManagement.Infrastructure\Excellerent.ClientManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.EppConfiguration.Domain\Excellerent.EppConfiguration.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ProjectManagement.Domain\Excellerent.ProjectManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ProjectManagement.Infrastructure\Excellerent.ProjectManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.ResourceManagement.Domain\Excellerent.ResourceManagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.ResourceManagement.Infrastructure\Excellerent.ResourceManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.Timesheet.Domain\Excellerent.Timesheet.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.Timesheet.Infrastructure\Excellerent.Timesheet.Infrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.Usermanagement.Domain\Excellerent.Usermanagement.Domain.csproj" />
+    <ProjectReference Include="..\Excellerent.Usermanagement.Infrastructure\Excellerent.Usermanagement.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
